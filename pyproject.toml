@@ -1,0 +1,16 @@
+[project]
+name = "dealpilot-lite"
+version = "0.1.0"
+description = "Agentic AI Private Equity Screening Assistant"
+requires-python = ">=3.12,<3.13"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["backend/tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+select = ["E", "F", "I", "W"]
+ignore = ["E501"]
